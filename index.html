@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <form class="form-container">
+    <form class="form-container" onsubmit="handleSubmit(event)">
         <label for="names">Nombres</label>
         <input id="names" name="names" type="text">
         <label for="lastnames">Apellidos</label>
@@ -19,12 +19,13 @@
         <label for="childs">Cantidad de hijos</label>
         <input id="child" name="child" type="number">
         <label for="pass">Contraseña</label>
-        <input id="pass" name="pass" type="password">
+        <input id="pass" name="pass" type="password" autocomplete="off">
         <div>
             <input id name="tyc" name="tyc" type="checkbox">
             <label for="tyc">Acepto término y condiciones</label>
         </div>
         <button type="submit" class="submit-button">Crear usuario</button>
     </form>
+    <script src="/js/index.js"></script>
 </body>
 </html>
