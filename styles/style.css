@@ -29,7 +29,8 @@ input:-webkit-autofill {
     width: 30%;
 }
 
-.submit-button {
+.submit-button, 
+.reset-button {
     padding: 0.5rem 1rem;
     border-radius: 1rem;
     color: #fff;
