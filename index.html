@@ -10,21 +10,28 @@
     <form class="form-container" onsubmit="handleSubmit(event)">
         <label for="names">Nombres</label>
         <input id="names" name="names" type="text">
+        <span id="names-error" class="helper"></span>
         <label for="lastnames">Apellidos</label>
         <input id="lastnames" name="lastnames" type="text">
+        <span id="lastnames-error" class="helper"></span>
         <label for="birthdate">Fecha de nacimiento</label>
         <input id="birthdate" name="birthdate" type="date" max="2024-01-01">
+        <span id="birthdate-error" class="helper"></span>
         <label for="email">Email</label>
-        <input id="email" name="email" type="text">
+        <input id="email" name="email" type="email">
+        <span id="email-error" class="helper"></span>
         <label for="childs">Cantidad de hijos</label>
         <input id="child" name="child" type="number">
+        <span id="child-error" class="helper"></span>
         <label for="pass">Contraseña</label>
         <input id="pass" name="pass" type="password" autocomplete="off">
+        <span id="pass-error" class="helper"></span>
         <div>
+            <!-- <input id="tyc" name="tyc" type="checkbox" onchange="disableSubmitButton()"> -->
             <input id="tyc" name="tyc" type="checkbox">
             <label for="tyc">Acepto término y condiciones</label>
         </div>
-        <button type="submit" class="submit-button">Crear usuario</button>
+        <button id="submit-button" type="submit" class="submit-button" disabled>Crear usuario</button>
         <button type="reset" class="reset-button">Resetear formulario</button>
     </form>
     <script src="/js/index.js"></script>

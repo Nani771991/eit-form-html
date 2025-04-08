@@ -10,6 +10,11 @@ body {
     margin: 0;
 }
 
+label{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
 input{
     padding: 0.5rem 1rem;
     border-radius: 1rem;
@@ -36,4 +41,21 @@ input:-webkit-autofill {
     color: #fff;
     background-color: rgb(13, 2, 41);
     border: 1px solid  rgb(13, 2, 41);
+}
+
+.submit-button:disabled{
+    background-color: rgb(121, 90, 199);
+}
+
+.input-error {
+    border: 2px solid red;
+}
+
+.helper {
+    display: none;
+}
+
+.helper-error {
+    font-size: 0.75rem;
+    color: red;
 }
